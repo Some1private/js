@@ -22,6 +22,7 @@ export default defineConfig((env) => ({
   },
   build: {
     minify: false,
+    sourcemap: true,
     rollupOptions: {
       external: Object.keys(pkg.dependencies),
       output: {
@@ -39,4 +40,17 @@ export default defineConfig((env) => ({
   test: {
     include: tests,
   },
-}));
+  server: {
+    host: true,
+    port: 3000,
+    strictPort: true,
+    hmr: {
+      overlay: true
+    },
+    watch: {
+      usePolling: true
+    },
+    cors: true,
+  },
+  logLevel: 'info',
+}))

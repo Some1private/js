@@ -53,6 +53,7 @@
     "@nabla/vite-plugin-eslint": "^2.0.2",
     "@types/cookie": "^0.6.0",
     "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.10.1",
     "@types/node-fetch": "^2.6.11",
     "@types/randombytes": "^2.0.3",
     "@types/set-cookie-parser": "^2.4.7",

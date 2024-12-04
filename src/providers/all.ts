@@ -74,10 +74,12 @@ import { soaperTvScraper } from './sources/soapertv';
 import { vidSrcToScraper } from './sources/vidsrcto';
 import { warezcdnScraper } from './sources/warezcdn';
 import { whvxScraper } from './sources/whvx';
+import { realDebridScraper } from './sources/realdebrid';
 
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
   return [
+    realDebridScraper,
     flixhqScraper,
     remotestreamScraper,
     kissAsianScraper,
